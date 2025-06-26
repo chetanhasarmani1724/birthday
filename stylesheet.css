@@ -1089,7 +1089,7 @@ audio {
 	}
 }
 
-/* .balloons {
+.balloons {
 	position: fixed;
 	bottom: -200px;
 	opacity: 0.6;
@@ -1098,24 +1098,11 @@ audio {
 	height: 183px;
 	background-repeat: no-repeat no-repeat;
 	background-size: 100px 183px;
-} */
- .balloons {
-	position: fixed;
-	bottom: -200px;
-	opacity: 0.6;
-	z-index: 99;
-	width: 10vw;
-	max-width: 100px;
-	height: auto;
-	background-repeat: no-repeat;
-	background-size: contain;
 }
-
 .balloons h2 {
 	text-transform: uppercase;
 	font-family: 'Signika', sans-serif;
-	/* font-size: 50px; */
-	font-size: 6vw; /* Responsive font size */
+	font-size: 50px;
 	color: #BF4136;
 	text-shadow: 5px 5px 5px #FFF;
 	display: none;
@@ -1156,15 +1143,6 @@ audio {
 	animation: balloons_rotate_one linear 10s infinite;
 	transform: rotate(30deg);
 }
-@media screen and (max-width: 400px) {
-	.balloons {
-		width: 12vw;
-	}
-	.balloons h2 {
-		font-size: 5vw;
-	}
-}
-
 @-webkit-keyframes balloons_rotate_one {
 	0% {
 		-webkit-transform: rotate(30deg);
